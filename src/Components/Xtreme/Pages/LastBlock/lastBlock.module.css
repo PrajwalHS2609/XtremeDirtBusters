@@ -1,0 +1,118 @@
+.lastBlockContainer {
+  /* border: solid; */
+  height: 10vh;
+  background-color: #F49539 ;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.lastContent {
+  /* border: solid; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.lastContent > div {
+  /* border: solid; */
+}
+.lastItem2 {
+  /* width: 200px;
+  height: 50px; */
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+.lastIcon {
+  height: 20px;
+  color: white;
+}
+.lastItem3 {
+  /* border: solid; */
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.lastBrandIcon {
+  /* border: solid; */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.lastItem2 {
+  /* width: 200px;
+  height: 50px; */
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: white;
+}
+.brandIcon {
+  width: 60%;
+  height: 60%;
+  color: rgb(113, 113, 113);
+  transition: 200ms ease-in-out;
+}
+
+.brandIcon:hover {
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .lastBlockContainer {
+    /* border: solid; */
+    height: 80px;
+    width: 600px;
+    align-items: center;
+  }
+  .lastContent {
+    /* border: solid; */
+    width: 49%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .lastItem2 {
+    width: 200px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+  }
+  .brandIcon {
+    width: 60%;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 990px) and (min-width: 600px) {
+  .lastBlockContainer {
+    /* border: solid; */
+    height: 10vh;
+    width: 768px;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .lastContent {
+    /* border: solid; */
+    width: 49%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .brandIcon {
+    width: 60%;
+    height: 60%;
+  }
+}

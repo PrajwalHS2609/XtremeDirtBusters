@@ -1,0 +1,143 @@
+.page1Container {
+  /* border: solid red; */
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.slideShow{
+  height: 100%;
+}
+#pg1img {
+  height: 100%;
+  width: 70%;
+  margin-left: 250px;
+  margin-top: 115px;
+}
+#pg1img2 {
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (min-width: 320px) {
+  .page1Container {
+    /* border: solid red; */
+    height: 400px;
+    width: 600px;
+ 
+  }
+  #pg1img {
+    height: 51vh;
+    width: 70%;
+    margin-left: 100px;
+    margin-top: 71px;
+  }
+  #pg1img2 {
+    height: 63vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page1Container {
+    /* border: solid red; */
+    height: 400px;
+    width: 100%;
+  }
+  #pg1img {
+    height: 55vh;
+    width: 70%;
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  #pg1img2 {
+    height: 63vh;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .page1Container {
+    /* border: solid red; */
+    height: 511px;
+    overflow: hidden;
+
+    width: 100%;
+  }
+  #pg1img {
+    height: 53vh;
+    width: 70%;
+    margin-left: 150px;
+    margin-top: 40px;
+  }
+  #pg1img2 {
+    height: 60vh;
+    width: 100%;
+  }
+}
+@media only screen and (min-width:1440px) {
+  .page1Container {
+    /* border: solid red; */
+    height: 525px;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .slideShow{
+    height: 100%;
+  }
+  #pg1img {
+    height: 470px;
+    width: 70%;
+    margin-left: 250px;
+    /* margin-top: 115px; */
+  }
+  #pg1img2 {
+    height: 530px;
+    width: 100%;
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .page1Container {
+    border: solid red;
+    height: 405px;
+    width: 600px;
+  }
+  #pg1img {
+    height: 55vh;
+    width: 90%;
+    margin-left: 40px;
+    margin-top: 53px;
+  }
+  #pg1img2 {
+    height: 55vh;
+    width: 100%;
+    margin-top: 53px;
+
+  }
+}
+@media screen and (max-width: 990px) and (min-width: 600px) {
+  .page1Container {
+    border: solid red;
+    height: 405px;
+    width: 768px;
+  }
+  #pg1img {
+    height: 55vh;
+    width: 70%;
+    margin-left: 90px;
+    margin-top: 53px;
+  }
+  #pg1img2 {
+    height: 55vh;
+    width: 100%;
+    margin-top: 53px;
+
+  }
+} */

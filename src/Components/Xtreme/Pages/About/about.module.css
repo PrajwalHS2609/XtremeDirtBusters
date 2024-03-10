@@ -1,0 +1,357 @@
+.aboutContainer {
+  /* border: solid; */
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://media.istockphoto.com/id/1465609335/photo/black-carbon-fiber-texture-background-sports-race-wallpaper.jpg?s=612x612&w=0&k=20&c=nfkuJLHOo5vuOvJxSBWTXfaLFGygjUIe5K0QeGDMBDU=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin-top: 10px;
+}
+.aboutContent {
+  /* border: solid ; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutImg1 {
+  width: 90%;
+  height: 100%;
+}
+.aboutHeadingContainer {
+  /* border: solid red; */
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.aboutHeadingDot {
+  border: 3px solid;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.aboutHeadingInnerDot {
+  /* border:  solid; */
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+.aboutHeadingTxt {
+  font-size: 40px;
+  font-family: monospace;
+  font-weight: bold;
+}
+.aboutHeadingTxt > span {
+  color: red;
+}
+.aboutContentTxt {
+  /* border: solid transparent; */
+  height: 90%;
+  width: 100%;
+}
+.aboutContentTxt > ul > li {
+  font-weight: bold;
+  margin: 15px;
+}
+.aboutBtn {
+  /* border: solid; */
+  outline: none;
+  height: 15%;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #f02801;
+  margin-left: 250px;
+  margin-top: 30px;
+  border-radius: 10px;
+  color: white;
+}
+.aboutBtnCover {
+  /* border: solid; */
+  background-color: grey;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  transform: translateX(-300px);
+  transition: 300ms ease-in-out;
+}
+
+.aboutBook {
+  /* border: solid; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-family: monospace;
+  font-weight: lighter;
+  position: absolute;
+  background-color: transparent;
+  z-index: 3;
+}
+.aboutBook > a {
+  text-decoration: none;
+  color: white;
+}
+.aboutBtn:hover .aboutBtnCover {
+  transform: translateX(0px);
+}
+@media screen and (min-width: 320px) {
+  .aboutContainer {
+    /* border: solid; */
+    height: 1000px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .aboutContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #aboutContent1 {
+    /* border: solid blue ; */
+    height: 35%;
+  }
+  .aboutImg1 {
+    width: 100%;
+    height: 100%;
+  }
+  .aboutContentTxt > ul > li {
+    font-weight: normal;
+    font-size: large;
+    margin: 15px;
+  }
+  .aboutBtn {
+    /* border: solid; */
+    height: 13%;
+    width: 45%;
+    margin-left: 165px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .aboutContainer {
+    /* border: solid; */
+    height: 1000px;
+    width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .aboutContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #aboutContent1 {
+    /* border: solid blue ; */
+    height: 40%;
+  }
+  .aboutImg1 {
+    width: 100%;
+    height: 100%;
+  }
+  .aboutContentTxt > ul > li {
+    font-weight: normal;
+    font-size: large;
+    margin: 15px;
+  }
+  .aboutBtn {
+    /* border: solid; */
+    height: 13%;
+    width: 35%;
+    margin-left: 250px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .aboutContainer {
+    /* border: solid; */
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .aboutContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #aboutContent1 {
+    /* border: solid blue ; */
+    height: 40%;
+  }
+  .aboutImg1 {
+    width: 100%;
+    height: 100%;
+  }
+  .aboutContentTxt > ul > li {
+    font-weight: normal;
+    font-size: large;
+    margin: 15px;
+  }
+  .aboutBtn {
+    /* border: solid; */
+    height: 13%;
+    width: 27%;
+    margin-left: 380px;
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .aboutContainer {
+    /* border: solid red; */
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: url(https://media.istockphoto.com/id/1465609335/photo/black-carbon-fiber-texture-background-sports-race-wallpaper.jpg?s=612x612&w=0&k=20&c=nfkuJLHOo5vuOvJxSBWTXfaLFGygjUIe5K0QeGDMBDU=);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 0px;
+  }
+  .aboutContent {
+    /* border: solid blue; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #aboutContent1 {
+    height: 100%;
+    width: 50%;
+  }
+  .aboutImg1 {
+    width: 100%;
+    height: 100%;
+  }
+  .aboutHeadingContainer {
+    /* border: solid red; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  .aboutHeadingDot {
+    border: 3px solid;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .aboutHeadingInnerDot {
+    /* border:  solid; */
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .aboutHeadingTxt {
+    font-size: 40px;
+    font-family: monospace;
+    font-weight: bold;
+  }
+  .aboutHeadingTxt > span {
+    color: red;
+  }
+  .aboutContentTxt {
+    /* border: solid transparent; */
+    height: 90%;
+    width: 100%;
+  }
+  .aboutContentTxt > ul > li {
+    font-weight: bold;
+    margin: 15px;
+  }
+  .aboutBtn {
+    /* border: solid; */
+    outline: none;
+    height: 15%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #f02801;
+    margin-left: 250px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+  }
+  .aboutBtnCover {
+    /* border: solid; */
+    background-color: grey;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    transform: translateX(-304px);
+    transition: 300ms ease-in-out;
+  }
+
+  .aboutBook {
+    /* border: solid; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: lighter;
+    position: absolute;
+    background-color: transparent;
+    z-index: 3;
+  }
+  .aboutBook > a {
+    text-decoration: none;
+    color: white;
+  }
+  .aboutBtn:hover .aboutBtnCover {
+    transform: translateX(0px);
+  }
+}

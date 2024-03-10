@@ -1,0 +1,28 @@
+.mapContainer {
+  /* border: solid; */
+  height: 400px;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .mapContainer {
+    /* border: solid; */
+    height: 500px;
+    width: 600px;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 990px) and (min-width: 600px) {
+    .mapContainer {
+        /* border: solid; */
+        height: 300px;
+        width: 768px;
+      }
+}

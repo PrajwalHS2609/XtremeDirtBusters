@@ -1,0 +1,704 @@
+:root {
+  --customDarkYellow: #f49539;
+  --customLightYellow: #ffb266;
+}
+
+.carCareContainer {
+  /* border: solid green; */
+  height: 650px;
+  margin-top: 450px;
+}
+.carCareHeadContainer {
+  /* border: solid blue; */
+  height: 12vh;
+  background-color: var(--customDarkYellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carCareHeadContainer > h1 {
+  font-weight: bold;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  color: black;
+  background-color: var(--customLightYellow);
+}
+.careCardContainer {
+  /* border: solid red; */
+  height: 550px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  margin-top: 10px;
+}
+.careCardContainer::-webkit-scrollbar {
+  height: 5px;
+  background-color: rgb(196, 196, 196);
+}
+.careCardContainer::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 20px;
+  width: 10%;
+}
+.firstBlock {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  margin-left: 30px;
+  display: flex;
+  scroll-snap-align: center;
+}
+.secondBlock {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  margin-left: 40px;
+  display: flex;
+  scroll-snap-align: center;
+}
+.thirdBlock {
+  /* border: solid blue; */
+  width: 100%;
+  height: 100%;
+  margin-left: 30px;
+  display: flex;
+  scroll-snap-align: center;
+}
+.careCardContent {
+  /* border: solid; */
+  border-radius: 10px;
+  min-width: 360px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  background-image: url(https://media.istockphoto.com/id/1371966433/photo/black-carbon-fiber-motion-background-technology-wavy-line-with-red-glowing-light-3d.jpg?s=612x612&w=0&k=20&c=UzO-WwX8zcTiYr3_jTNii1Y2aeVtM9JcJYZKrX9Bxy4=);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.careCardPic {
+  /* border: solid; */
+  /* border-radius: 10px; */
+  width: 60%;
+  height: 35%;
+  margin-top: 15px;
+}
+.careCardPic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.careCardTxt {
+  /* border: solid; */
+  height: 60%;
+  width: 100%;
+  margin-top: 23px;
+  border-radius: 10px;
+}
+.careCardTxtHead {
+  /* border: solid; */
+  font-family: monospace;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: var(--customDarkYellow);
+  color: white;
+}
+
+.careCardTxtMain {
+  /* border: solid; */
+  height: 90%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--customLightYellow);
+}
+.careCardTxtMain > ul > li {
+  font-size: x-large;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 5px;
+  color: white;
+}
+@media only screen and (min-width: 320px) {
+  .carCareContainer {
+    /* border : solid green; */
+    height: 650px;
+    width: 600px;
+    margin-top: 336px;
+  }
+  .careCardContainer {
+    /* border: solid teal; */
+    height: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: none;
+    margin-top: 0px;
+  }
+  .firstBlock {
+    /* border: solid red; */
+    width: 100%;
+    height: 95%;
+    margin-left: -20px;
+    margin-bottom: 5px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .secondBlock {
+    /* border: solid green; */
+    width: 200%;
+    height: 101%;
+    /* margin-left: 200%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: none;
+  }
+  .thirdBlock {
+    /* border: solid blue; */
+    width: 200%;
+    height: 101%;
+    /* margin-left: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: none;
+  }
+  .careCardContent {
+    /* border: solid red; */
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-width: 285px;
+    height: 100%;
+  }
+  .careCardPic {
+    /* border: solid; */
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .careCardPic > img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .careCardTxtHead {
+    /* border: solid; */
+    font-size: 19px;
+    display: flex;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .careCardTxtMain {
+    /* border: solid; */
+    border-bottom-right-radius: 0px;
+    height: 91%;
+  }
+  .careCardTxtMain > ul > li {
+    font-size: 19px;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 3px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .carCareContainer {
+    /* border : solid green; */
+    height: 650px;
+    width: 100%;
+    margin-top: 336px;
+  }
+  .careCardContainer {
+    /* border: solid teal; */
+    height: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: none;
+    margin-top: 0px;
+  }
+  .firstBlock {
+    /* border: solid red; */
+    width: 100%;
+    height: 95%;
+    margin-left: -20px;
+    margin-bottom: 5px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .secondBlock {
+    /* border: solid green; */
+    width: 200%;
+    height: 101%;
+    /* margin-left: 200%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: none;
+  }
+  .thirdBlock {
+    /* border: solid blue; */
+    width: 200%;
+    height: 101%;
+    /* margin-left: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: none;
+  }
+  .careCardContent {
+    /* border: solid red; */
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-width: 367px;
+    height: 100%;
+  }
+  .careCardPic {
+    /* border: solid; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .careCardPic > img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .careCardTxtHead {
+    /* border: solid; */
+    font-size: 19px;
+    display: flex;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .careCardTxtMain {
+    /* border: solid; */
+    border-bottom-right-radius: 0px;
+    height: 91%;
+  }
+  .careCardTxtMain > ul > li {
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 3px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .carCareContainer {
+    /* border : solid green; */
+    height: 680px;
+    width: 100%;
+    margin-top: 425px;
+  }
+  .careCardContainer {
+    /* border: solid teal; */
+    height: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: none;
+    margin-top: 0px;
+  }
+  .firstBlock {
+    /* border: solid red; */
+    width: 100%;
+    height: 95%;
+    margin-left: -20px;
+    margin-bottom: 5px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .secondBlock {
+    /* border: solid green; */
+    width: 200%;
+    height: 101%;
+    /* margin-left: 200%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: none;
+  }
+  .thirdBlock {
+    /* border: solid blue; */
+    width: 200%;
+    height: 101%;
+    /* margin-left: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: none;
+  }
+  .careCardContent {
+    /* border: solid red; */
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-width: 325px;
+    height: 100%;
+  }
+  .careCardPic {
+    /* border: solid; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .careCardPic > img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .careCardTxtHead {
+    /* border: solid; */
+    font-size: 19px;
+    display: flex;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .careCardTxtMain {
+    /* border: solid; */
+    border-bottom-right-radius: 0px;
+    height: 91%;
+  }
+  .careCardTxtMain > ul > li {
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 3px;
+  }
+}
+@media only screen and (min-width:1440px) {
+  .carCareContainer {
+    /* border: solid green; */
+    height: 660px;
+    margin-top: 452px;
+  }
+  .carCareHeadContainer {
+    /* border: solid blue; */
+    height: 12vh;
+    background-color: var(--customDarkYellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carCareHeadContainer > h1 {
+    font-weight: bold;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: black;
+    background-color: var(--customLightYellow);
+  }
+  .careCardContainer {
+    /* border: solid red; */
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    margin-top: 10px;
+  }
+  .careCardContainer::-webkit-scrollbar {
+    height: 5px;
+    background-color: rgb(196, 196, 196);
+  }
+  .careCardContainer::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 20px;
+    width: 10%;
+  }
+  .firstBlock {
+    /* border: solid red; */
+    width: 100%;
+    height:95%;
+    margin-left: 30px;
+    display: flex;
+    scroll-snap-align: center;
+  }
+  .secondBlock {
+    /* border: solid green; */
+    width: 100%;
+    height: 101%;
+    margin-left: 40px;
+    display: flex;
+    scroll-snap-align: center;
+  }
+  .thirdBlock {
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    scroll-snap-align: center;
+  }
+  .careCardContent {
+    /* border: solid; */
+    border-radius: 10px;
+    min-width: 360px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background-image: url(https://media.istockphoto.com/id/1371966433/photo/black-carbon-fiber-motion-background-technology-wavy-line-with-red-glowing-light-3d.jpg?s=612x612&w=0&k=20&c=UzO-WwX8zcTiYr3_jTNii1Y2aeVtM9JcJYZKrX9Bxy4=);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .careCardPic {
+    /* border: solid; */
+    /* border-radius: 10px; */
+    width: 60%;
+    height: 35%;
+    margin-top: 15px;
+  }
+  .careCardPic > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .careCardTxt {
+    /* border: solid; */
+    height: 60%;
+    width: 100%;
+    margin-top: 23px;
+    border-radius: 10px;
+  }
+  .careCardTxtHead {
+    /* border: solid; */
+    font-family: monospace;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: var(--customDarkYellow);
+    color: white;
+  }
+  
+  .careCardTxtMain {
+    /* border: solid; */
+    height: 92%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: var(--customLightYellow);
+  }
+  .careCardTxtMain > ul > li {
+    font-size: x-large;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+  }
+}
+/* @media screen and (max-width: 600px) {
+  .carCareContainer {
+    border : solid green;
+    height: 555px;
+    width: 600px;
+    background-color: white;
+    margin-top: 340px;
+  }
+  .careCardContainer {
+    border: solid teal;
+    height: 470px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: none;
+    margin-top: 0px;
+  }
+  .firstBlock {
+    border: solid red;
+    width: 100%;
+    height: 100%;
+    margin-left: -20px;
+    margin-bottom: 5px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .secondBlock {
+    border: solid green;
+    width: 200%;
+    height: 100%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .thirdBlock {
+    border: solid blue;
+    width: 120%;
+    height: 100%;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .careCardContent {
+    border: solid;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-width: 285px;
+    height: 100%;
+  }
+  .careCardPic {
+    border: solid;
+    width: 100%;
+    height: 40%;
+  }
+  .careCardTxtHead {
+    border: solid;
+    font-size: 19px;
+    display: flex;
+    font-weight: bolder;
+    letter-spacing: 0px;
+  }
+
+  .careCardPic {
+    border: solid;
+    border-radius: 10px;
+    width: 60%;
+    height: 35%;
+    margin-top: 15px;
+  }
+
+  .careCardTxtMain {
+    border-bottom-right-radius: 0px;
+  }
+  .careCardTxtMain > ul > li {
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 4px;
+  }
+}
+@media screen and (max-width: 990px) and (min-width: 600px) {
+  .carCareContainer {
+    border: solid green;
+    height: 587px;
+    width: 768px;
+    background-color: white;
+    margin-top: 340px;
+  }
+  .careCardContainer {
+    border: solid teal;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-snap-type: none;
+    margin-top: 0px;
+  }
+  .firstBlock {
+    border: solid red;
+    width: 100%;
+    height: 100%;
+    margin-left: -25px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .secondBlock {
+    border: solid green;
+    width: 200%;
+    height: 100%;
+    margin-left: 40px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .thirdBlock {
+    border: solid blue;
+    width: 120%;
+    height: 100%;
+    margin-left: 30px;
+    display: flex;
+    scroll-snap-align: none;
+  }
+  .careCardContent {
+    border: solid;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    min-width: 365px;
+    height: 99%;
+  }
+  .careCardPic {
+    border: solid;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .careCardPic > img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .careCardTxtHead {
+    border: solid;
+    font-size: 19px;
+    display: flex;
+    font-weight: bolder;
+    letter-spacing: 0px;
+    background-color:var(--customDarkYellow);
+    border-bottom-right-radius: 0px;
+  }
+  .careCardTxtMain {
+    border-bottom-right-radius: 0px;
+  }
+  .careCardTxtMain > ul > li {
+    font-size: large;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 3px;
+  }
+} */

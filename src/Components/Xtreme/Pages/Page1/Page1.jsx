@@ -14,20 +14,20 @@ const Page1 = () => {
     <div className={style.page1Container} id="page1">
       <Carousel className={style.slideShow} activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
-          <img id={style.pg1img} src="./Pics/Xtreme1.JPG" alt="" />
+          <img id={style.pg1img} src="./Pics/Xtreme1.jpg" alt="" />
           {/* <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
-          <img id={style.pg1img2} src="./Pics/CarAccessories.JPG" alt="" />
+          <img id={style.pg1img2} src="./Pics/CarAccessories.jpg" alt="" />
           {/* <Carousel.Caption id={style.pg1Caption}>
             <div className={style.pg1SeeMore}>See More</div>
           </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
-          <img id={style.pg1img2} src="./Pics/CarWash.JPG" alt="" />
+          <img id={style.pg1img2} src="./Pics/CarWash.jpg" alt="" />
           {/* <Carousel.Caption id={style.pg1Caption}>
             <div className={style.pg1SeeMore}>See More</div>
           </Carousel.Caption> */}
